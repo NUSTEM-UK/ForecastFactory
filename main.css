@@ -1,17 +1,34 @@
-input {
-	width: 100;
-	height: 100;
+h1 {
+	width: 200;
 	font-size: 20pt;
 	margin: 0;
+	margin-top: 60;
 	padding: 0;
 	border: none;
 	background: #00000000;
 	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	font-weight: 600;
+}
+
+input {
+	width: 200;
+	height: 50;
+	font-size: 16pt;
+	margin: 0;
+	margin-top: 120;
+	padding: 0;
+	border: none;
+	background: #00000000;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
 }
 
 .inputs {
-	width: 400;
-	height: 400;
+	width: 800;
+	height: 800;
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -21,15 +38,57 @@ input {
 }
 
 span {
-	width: 400;
-	height: 100;
+	width: 800;
+	height: 200;
 	margin: 0;
 	padding: 0;
 	border: none;
 	background: #00000000;
 }
 
+span div {
+	width: 200;
+	height: 200;
+	display: inline-block;
+	float: left;
+}
+
 canvas {
 	position: absolute;
 	z-index: 0;
+}
+
+.switch {
+	left: 1000;
+	width: 280;
+	height: 800;
+	margin: 0;
+	padding: 0;
+	border: none;
+	position: absolute;
+	z-index: 2;
+	background: #00000000;
+}
+
+.switch div {
+	width: 100;
+	height: 800;
+	margin: 0 20;
+	padding: 0;
+	border: none;
+	float: left;
+}
+
+h2 {
+	font-size: 18pt;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+button {
+	width: 100;
+	height: 40;
+	margin: 20 0;
+	font-size: 15pt;
+	font-family: 'Roboto', sans-serif;
 }

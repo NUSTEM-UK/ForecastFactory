@@ -48,8 +48,7 @@ function tempToColour(temp) {
 }
 
 function setup() {
-	// bg = loadImage('');
-	createCanvas(400, 400);
+	createCanvas(800, 800);
 	background(200);
 	rectMode(CORNER);
 }
@@ -59,125 +58,77 @@ function draw() {
 	noFill();
 	for (var x = 0; x < width; x += width/4) {
 		for (var y = 0; y < height; y += height/4) {
-			switch((x/25) + (y/100)) {
+			switch((x/50) + (y/200)) {
 			  case 0:
 				var temp = $("input[name='A1']").val();
 			    console.log("temp:" + temp);
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 1:
 			    var temp = $("input[name='B1']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 2:
 			    var temp = $("input[name='C1']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 3:
 			    var temp = $("input[name='D1']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 4:
 			    var temp = $("input[name='A2']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 5:
 			    var temp = $("input[name='B2']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 6:
 			    var temp = $("input[name='C2']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 7:
 			    var temp = $("input[name='D2']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 8:
 			    var temp = $("input[name='A3']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 9:
 			    var temp = $("input[name='B3']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-			    // fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 10:
 			    var temp = $("input[name='C3']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 11:
 			    var temp = $("input[name='D3']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 12:
 			    var temp = $("input[name='A4']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 13:
 			    var temp = $("input[name='B4']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 14:
 			    var temp = $("input[name='C4']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  case 15:
 			    var temp = $("input[name='D4']").val();
-			    // var colour = pickHex(gradientColours[0], gradientColours[1], ((temp+10)/50));
-			    // console.log(colour);
-				// fill(colour[0], colour[1], colour[2]);
 				fill(tempToColour(temp));
 			    break;
 			  default:
 			    console.log("didn't work");
 			    noFill();
 			}
-			rect(x, y, 100, 100);
+			rect(x, y, width/4, height/4);
 		}
 	}
 }

@@ -1,17 +1,58 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
 		<script src="palette.js"></script>
 		<script src="sketch.js"></script>
+		<script src="switch.js"></script>
 	</head>
 	<body>
 		<div class="inputs">
-			<span><input type="text" name="A1" id="A1" value="0"><input type="text" name="A2" id="A2" value="0"><input type="text" name="A3" id="A3" value="0"><input type="text" name="A4" id="A4" value="0"></span>
-			<span><input type="text" name="B1" id="B1" value="0"><input type="text" name="B2" id="B2" value="0"><input type="text" name="B3" id="B3" value="0"><input type="text" name="B4" id="B4" value="0"></span>
-			<span><input type="text" name="C1" id="C1" value="0"><input type="text" name="C2" id="C2" value="0"><input type="text" name="C3" id="C3" value="0"><input type="text" name="C4" id="C4" value="0"></span>
-			<span><input type="text" name="D1" id="D1" value="0"><input type="text" name="D2" id="D2" value="0"><input type="text" name="D3" id="D3" value="0"><input type="text" name="D4" id="D4" value="0"></span>
+			<span>
+				<div><h1>Carlisle</h1><input type="text" name="A1" id="A1" value="0"></div>
+				<div><h1>North Pennines</h1><input type="text" name="A2" id="A2" value="0"></div>
+				<div><h1>Newcastle</h1><input type="text" name="A3" id="A3" value="0"></div>
+				<div><h1>Sunderland</h1><input type="text" name="A4" id="A4" value="0"></div>
+			</span>
+			<span>
+				<div><h1>Kewick</h1><input type="text" name="B1" id="B1" value="0"></div>
+				<div><h1>Kendal</h1><input type="text" name="B2" id="B2" value="0"></div>
+				<div><h1>Darlington</h1><input type="text" name="B3" id="B3" value="0"></div>
+				<div><h1>Middlesbrough</h1><input type="text" name="B4" id="B4" value="0"></div>
+			</span>
+			<span>
+				<div><h1>Blackpool</h1><input type="text" name="C1" id="C1" value="0"></div>
+				<div><h1>Lancaster</h1><input type="text" name="C2" id="C2" value="0"></div>
+				<div><h1>Leeds</h1><input type="text" name="C3" id="C3" value="0"></div>
+				<div><h1>York</h1><input type="text" name="C4" id="C4" value="0"></div>
+			</span>
+			<span>
+				<div><h1>Liverpool</h1><input type="text" name="D1" id="D1" value="0"></div>
+				<div><h1>Manchester</h1><input type="text" name="D2" id="D2" value="0"></div>
+				<div><h1>Sheffield</h1><input type="text" name="D3" id="D3" value="0"></div>
+				<div><h1>Doncaster</h1><input type="text" name="D4" id="D4" value="0"></div>
+			</span>
+		</div>
+
+		<div class="switch">
+			<div class="computer">
+				<h2>Computer</h2>
+				<button type="button" onclick="setToInitialComp()">Initial</button>
+				<button type="button" onclick="setTo1HourComp()">1 Hour</button>
+				<button type="button" onclick="setTo2HoursComp()">2 Hours</button>
+				<button type="button" onclick="setTo3HoursComp()">3 Hours</button>
+				<button type="button" onclick="setTo4HoursComp()">4 Hours</button>
+			</div>
+			<div class="you">
+				<h2>You</h2>
+				<button type="button" onclick="setToInitialYou()">Initial</button>
+				<button type="button" onclick="setTo1HourYou()">1 Hour</button>
+				<button type="button" onclick="setTo2HoursYou()">2 Hours</button>
+				<button type="button" onclick="setTo3HoursYou()">3 Hours</button>
+				<button type="button" onclick="setTo4HoursYou()">4 Hours</button>
+			</div>
 		</div>
 	</body>
 </html>
