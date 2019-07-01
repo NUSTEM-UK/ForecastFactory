@@ -21,13 +21,10 @@ function tempToColour(temp) {
 	temp = parseFloat(temp);
 	console.log("t: " + temp);
 
-	offsetTemp = temp + 10;
+	offsetTemp = temp + 5;
 	console.log("ot: " + offsetTemp);
 
-	roundedTemp = round(offsetTemp, 1);
-	console.log("rt: " + roundedTemp);
-
-	finalTemp = roundedTemp*10;
+	finalTemp = round((offsetTemp/35)*500);
 	if (finalTemp >= 500)
 	{
 		finalTemp = 499;
