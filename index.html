@@ -7,52 +7,88 @@
 		<script src="palette.js"></script>
 		<script src="sketch.js"></script>
 		<script src="switch.js"></script>
+		<title>ForecastFactory</title>
 	</head>
 	<body>
-		<div class="inputs">
+		<h1>Forecast Factory</h1>
+		
+		<div class="you">
 			<span>
-				<div><h1>Carlisle</h1><input type="text" name="A1" id="A1" value="0"></div>
-				<div><h1>North Pennines</h1><input type="text" name="A2" id="A2" value="0"></div>
-				<div><h1>Newcastle</h1><input type="text" name="A3" id="A3" value="0"></div>
-				<div><h1>Sunderland</h1><input type="text" name="A4" id="A4" value="0"></div>
+				<div><h2>Carlisle</h2><input class="you" type="text" name="A1" id="A1" value="0"></div>
+				<div><h2>North Pennines</h2><input class="you"type="text" name="A2" id="A2" value="0"></div>
+				<div><h2>Newcastle</h2><input class="you" type="text" name="A3" id="A3" value="0"></div>
+				<div><h2>Sunderland</h2><input class="you" type="text" name="A4" id="A4" value="0"></div>
 			</span>
 			<span>
-				<div><h1>Kewick</h1><input type="text" name="B1" id="B1" value="0"></div>
-				<div><h1>Kendal</h1><input type="text" name="B2" id="B2" value="0"></div>
-				<div><h1>Darlington</h1><input type="text" name="B3" id="B3" value="0"></div>
-				<div><h1>Middlesbrough</h1><input type="text" name="B4" id="B4" value="0"></div>
+				<div><h2>Kewick</h2><input class="you" type="text" name="B1" id="B1" value="0"></div>
+				<div><h2>Kendal</h2><input class="you" type="text" name="B2" id="B2" value="0"></div>
+				<div><h2>Darlington</h2><input class="you" type="text" name="B3" id="B3" value="0"></div>
+				<div><h2>Middlesbrough</h2><input class="you" type="text" name="B4" id="B4" value="0"></div>
 			</span>
 			<span>
-				<div><h1>Blackpool</h1><input type="text" name="C1" id="C1" value="0"></div>
-				<div><h1>Lancaster</h1><input type="text" name="C2" id="C2" value="0"></div>
-				<div><h1>Leeds</h1><input type="text" name="C3" id="C3" value="0"></div>
-				<div><h1>York</h1><input type="text" name="C4" id="C4" value="0"></div>
+				<div><h2>Blackpool</h2><input class="you" type="text" name="C1" id="C1" value="0"></div>
+				<div><h2>Lancaster</h2><input class="you" type="text" name="C2" id="C2" value="0"></div>
+				<div><h2>Leeds</h2><input class="you" type="text" name="C3" id="C3" value="0"></div>
+				<div><h2>York</h2><input class="you" type="text" name="C4" id="C4" value="0"></div>
 			</span>
 			<span>
-				<div><h1>Liverpool</h1><input type="text" name="D1" id="D1" value="0"></div>
-				<div><h1>Manchester</h1><input type="text" name="D2" id="D2" value="0"></div>
-				<div><h1>Sheffield</h1><input type="text" name="D3" id="D3" value="0"></div>
-				<div><h1>Doncaster</h1><input type="text" name="D4" id="D4" value="0"></div>
+				<div><h2>Liverpool</h2><input class="you" type="text" name="D1" id="D1" value="0"></div>
+				<div><h2>Manchester</h2><input class="you" type="text" name="D2" id="D2" value="0"></div>
+				<div><h2>Sheffield</h2><input class="you" type="text" name="D3" id="D3" value="0"></div>
+				<div><h2>Doncaster</h2><input class="you" type="text" name="D4" id="D4" value="0"></div>
+			</span>
+		</div>
+
+		<div class="computer">
+			<span>
+				<div><h2>Carlisle</h2><input class="computer" type="text" name="A1" id="A1" value="0" readonly></div>
+				<div><h2>North Pennines</h2><input class="computer" type="text" name="A2" id="A2" value="0" readonly></div>
+				<div><h2>Newcastle</h2><input class="computer" type="text" name="A3" id="A3" value="0" readonly></div>
+				<div><h2>Sunderland</h2><input class="computer" type="text" name="A4" id="A4" value="0"></div>
+			</span>
+			<span>
+				<div><h2>Kewick</h2><input class="computer" type="text" name="B1" id="B1" value="0" readonly></div>
+				<div><h2>Kendal</h2><input class="computer" type="text" name="B2" id="B2" value="0" readonly></div>
+				<div><h2>Darlington</h2><input class="computer"type="text" name="B3" id="B3" value="0" readonly></div>
+				<div><h2>Middlesbrough</h2><input class="computer"type="text" name="B4" id="B4" value="0" readonly></div>
+			</span>
+			<span>
+				<div><h2>Blackpool</h2><input class="computer" type="text" name="C1" id="C1" value="0" readonly></div>
+				<div><h2>Lancaster</h2><input class="computer" type="text" name="C2" id="C2" value="0" readonly></div>
+				<div><h2>Leeds</h2><input class="computer" type="text" name="C3" id="C3" value="0" readonly></div>
+				<div><h2>York</h2><input class="computer" type="text" name="C4" id="C4" value="0" readonly></div>
+			</span>
+			<span>
+				<div><h2>Liverpool</h2><input class="computer" type="text" name="D1" id="D1" value="0" readonly></div>
+				<div><h2>Manchester</h2><input class="computer" type="text" name="D2" id="D2" value="0" readonly></div>
+				<div><h2>Sheffield</h2><input class="computer" type="text" name="D3" id="D3" value="0" readonly></div>
+				<div><h2>Doncaster</h2><input class="computer" type="text" name="D4" id="D4" value="0" readonly></div>
 			</span>
 		</div>
 
 		<div class="switch">
-			<div class="computer">
-				<h2>Computer</h2>
+			<div class="youbtn">
+				<h3>You</h3>
+				<button type="button" onclick="setTo4HoursYou()">4 Hours</button>
+				<button type="button" onclick="setTo3HoursYou()">3 Hours</button>
+				<button type="button" onclick="setTo2HoursYou()">2 Hours</button>
+				<button type="button" onclick="setTo1HourYou()">1 Hour</button>
+				<button type="button" onclick="setToInitialYou()">Initial</button>
+			</div>
+
+			<div class="computerbtn">
+				<h3>Computer</h3>
 				<button type="button" onclick="setToInitialComp()">Initial</button>
 				<button type="button" onclick="setTo1HourComp()">1 Hour</button>
 				<button type="button" onclick="setTo2HoursComp()">2 Hours</button>
 				<button type="button" onclick="setTo3HoursComp()">3 Hours</button>
 				<button type="button" onclick="setTo4HoursComp()">4 Hours</button>
 			</div>
-			<div class="you">
-				<h2>You</h2>
-				<button type="button" onclick="setToInitialYou()">Initial</button>
-				<button type="button" onclick="setTo1HourYou()">1 Hour</button>
-				<button type="button" onclick="setTo2HoursYou()">2 Hours</button>
-				<button type="button" onclick="setTo3HoursYou()">3 Hours</button>
-				<button type="button" onclick="setTo4HoursYou()">4 Hours</button>
-			</div>
 		</div>
+
+		<footer>
+			<p>Adapted from Charlton‐Perez, A. and Dacre, H. (2011), Lewis Fry Richardson's forecast factory – for real. Weather, 66: 52-54. doi:10.1002/wea.670</p>
+			<img src="NUSTEMLogo.png" alt"nustem logo"/>
+		</footer>
 	</body>
 </html>
