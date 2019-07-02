@@ -1,5 +1,7 @@
 body{
-	margin: 0 auto;
+	width: 1800;
+	height: 1050;
+	margin: 10 auto;
 }
 
 h1 {
@@ -10,6 +12,7 @@ h1 {
 	position: absolute;
 	font-weight: 600;
 	margin: 0;
+	color: #F8971D;
 }
 
 h2 {
@@ -57,10 +60,11 @@ div.computer {
 	margin: 80 0 0 0;
 	padding: 0;
 	border: none;
-	position: absolute;
+	position: relative;
 	z-index: 1;
 	background: #00000000;
-	left: 1010;
+	float: right;
+	right: 0;
 }
 
 span {
@@ -155,6 +159,7 @@ canvas {
 footer {
 	top: 1000;
 	width: 1800;
+	height: 50;
 	margin: 0;
 	position: absolute;
 	vertical-align: bottom;
