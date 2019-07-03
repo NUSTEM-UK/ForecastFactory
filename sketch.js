@@ -1,28 +1,28 @@
 var colourGradient = palette('tol-rainbow', 500);
-console.log(colourGradient);
+// console.log(colourGradient);
 
 function convertHex(hex, opacity) {
 	r = parseInt(hex.substr(0, 2), 16);
 	g = parseInt(hex.substr(2, 2), 16);
 	b = parseInt(hex.substr(4, 2), 16);
 
-	console.log(hex);
-	console.log(g);
+	// console.log(hex);
+	// console.log(g);
 
 	result = 'rgba(' + r + ',' + g + ',' + b + ',' + opacity / 100 + ')';
 	return result;
 }
 
 function tempToColour(temp) {
-	console.log(temp);
+	// console.log(temp);
 	if (typeof temp === 'undefined' || !temp || temp == "-") {
 		temp = 0;
 	}
 	temp = parseFloat(temp);
-	console.log("t: " + temp);
+	// console.log("t: " + temp);
 
 	offsetTemp = temp + 5;
-	console.log("ot: " + offsetTemp);
+	// console.log("ot: " + offsetTemp);
 
 	finalTemp = round((offsetTemp/35)*500);
 	if (finalTemp >= 500)
@@ -33,11 +33,11 @@ function tempToColour(temp) {
 	{
 		finalTemp = 0;
 	}
-	console.log("ft: " + finalTemp);
+	// console.log("ft: " + finalTemp);
 
 	
 	hexColour = colourGradient[finalTemp];
-	console.log(hexColour);
+	// console.log(hexColour);
 
 	colour = convertHex(hexColour, 100);
 
@@ -57,7 +57,7 @@ function draw() {
 			switch((x/50) + (y/200)) {
 			  case 0:
 				var temp = $(".you[name='A1']").val();
-			    console.log("temp:" + temp);
+			    // console.log("temp:" + temp);
 				fill(tempToColour(temp));
 			    break;
 			  case 1:
@@ -121,7 +121,7 @@ function draw() {
 				fill(tempToColour(temp));
 			    break;
 			  default:
-			    console.log("didn't work");
+			    // console.log("didn't work");
 			    noFill();
 			}
 			rect(x, y, 200, 200);
@@ -132,7 +132,7 @@ function draw() {
 			switch(((x-1000)/50) + (y/200)) {
 			  case 0:
 				var temp = $(".computer[name='A1']").val();
-			    console.log("temp:" + temp);
+			    // console.log("temp:" + temp);
 				fill(tempToColour(temp));
 			    break;
 			  case 1:
@@ -196,7 +196,7 @@ function draw() {
 				fill(tempToColour(temp));
 			    break;
 			  default:
-			    console.log("didn't work");
+			    // console.log("didn't work");
 			    noFill();
 			}
 			rect(x, y, 200, 200);
