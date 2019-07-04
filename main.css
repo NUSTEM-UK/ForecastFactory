@@ -183,7 +183,7 @@ footer img {
 label.switch {
 	position: relative;
 	display: inline-block;
-	width: 70;
+	width: 60;
 	height: 40;
 	float: right;
 	margin: 10 20 0 5;
@@ -209,9 +209,11 @@ label.switch input {
 	background-color: #ccc;
 	-webkit-transition: .4s;
 	transition: .4s;
+	border-radius: 20px;
 }
 
 .slider:before {
+	border-radius: 20px;
 	position: absolute;
 	content: "";
 	height: 30;
@@ -232,5 +234,5 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-	left: 35;
+	left: 25;
 }
