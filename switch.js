@@ -273,5 +273,5 @@ function setTo4HoursYou() {
 	}
 }
 
-setToInitialYou();
+setToInitialYou(); 
 setToInitialComp();
