@@ -141,19 +141,39 @@ canvas {
 .youbtn button {
 	width: 100;
 	height: 40;
-	margin: 10 0 0 5;
+	margin: 10 0 0 15;
 	font-size: 15pt;
 	font-family: 'Roboto', sans-serif;
 	float: right;
+	color: #555555;
+	background-color: #ffffff;
+	border-radius: 10px;
+	border: 2px solid #555555;
 }
 
 .computerbtn button {
 	width: 100;
 	height: 40;
-	margin: 10 5 0 0;
+	margin: 10 15 0 0;
 	font-size: 15pt;
 	font-family: 'Roboto', sans-serif;
 	float: left;
+	color: #555555;
+	background-color: #ffffff;
+	border-radius: 10px;
+	border: 2px solid #555555;
+}
+
+.youbtn button:hover {
+	color: #ffffff;
+	background-color: #555555;
+	border: none;
+}
+
+.computerbtn button:hover {
+	color: #ffffff;
+	background-color: #555555;
+	border: none;
 }
 
 footer {
@@ -226,11 +246,11 @@ label.switch input {
 }
 
 input:checked + .slider {
-	background-color: #2196F3;
+	background-color: #555555;
 }
 
 input:focus + .slider {
-	box-shadow: 0 0 1 #2196F3;
+	box-shadow: 0 0 1 #555555;
 }
 
 input:checked + .slider:before {
